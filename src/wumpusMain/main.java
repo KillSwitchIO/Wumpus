@@ -51,15 +51,7 @@ public class main
 		
 // 		for testing grid creation
 		char[][] wumpus_grid = GenerateGrid.newGrid(RandomAspect.getNextNum(5, 10), -1, player_coord);
-		for(int pos_y = 0; pos_y < wumpus_grid.length; pos_y ++)
-		{
-			for(int pos_x = 0; pos_x < wumpus_grid.length; pos_x++)
-				{
-					System.out.print(wumpus_grid[pos_y][pos_x]);
-					System.out.print(" ");
-				}
-			System.out.println();
-		}
+		PrintGrid.print(wumpus_grid);
 		
 		System.exit(0);
 	}
